@@ -1,7 +1,7 @@
 package org.example;
 import java.util.*;
 
-public class calculatorengine {
+public class calculator {
     public double Add(double input1, double input2) {
         //preq-ENGINE-3
         double sum = input1+input2;

@@ -7,8 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="src" />
-        <module name="engine" />
+        <module name="calculator-engine" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="engine" target="18" />
+    </bytecodeTargetLevel>
   </component>
 </project>

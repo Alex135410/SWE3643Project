@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>engine</artifactId>
+    <artifactId>calculator-engine</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
