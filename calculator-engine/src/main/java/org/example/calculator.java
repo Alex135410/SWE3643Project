@@ -1,5 +1,5 @@
 package org.example;
-import java.util.*;
+
 
 public class calculator {
     public double Add(double input1, double input2) {
@@ -31,7 +31,12 @@ public class calculator {
 
     public double equals(double input1, double input2){
         //preq-ENGINE-8
-
+        double precision = 0.00000001;
+        if (Math.abs(input1 - input2) < precision) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
 
     public double raiseToPower(double base, double power) {
@@ -52,6 +57,7 @@ public class calculator {
     public double rootOfPower(double input1, double input2) {
         //preq-ENGINE-11
 
+        return input1;//just a temp so it returns something
     }
 
     public double factorialOfNumber(double input1) {
@@ -68,18 +74,21 @@ public class calculator {
 
     public double sineA(double input1){
         //preq-ENGINE-13
-        double sum = Math.sin(input1);
+        double conversion = Math.toRadians(input1);
+        double sum = Math.sin(conversion);
         return sum;
     }
 
     public double cosineA(double input1){
         //preq-ENGINE-14
+        double conversion = Math.toRadians(input1);
         double sum = Math.cos(input1);
         return sum;
     }
 
     public double tangentA(double input1) {
         //preq-ENGINE-15
+        double conversion = Math.toRadians(input1);
         double sum= Math.cos(input1);
         return sum;
     }
@@ -87,5 +96,6 @@ public class calculator {
     public double reciprocalOfA(double input1){
         //preq-ENGINE-16
 
+        return input1;//just a temp so it returns something
     }
 }
