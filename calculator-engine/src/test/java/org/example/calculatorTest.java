@@ -69,6 +69,13 @@ class calculatorTest {
         //Arrange
         final double A = 5.0;
         final double B = 0.0;
+        final double EXPECTED;
+
+        //Act
+        var result = cal.divison(A,B);
+
+        //Assert
+        assertEquals(EXPECTED, result);
     }
 
     @Test
