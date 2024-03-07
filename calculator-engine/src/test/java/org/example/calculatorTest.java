@@ -2,7 +2,6 @@ package org.example;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class calculatorTest {
@@ -69,13 +68,11 @@ class calculatorTest {
         //Arrange
         final double A = 5.0;
         final double B = 0.0;
-        final double EXPECTED;
-
         //Act
         var result = cal.divison(A,B);
 
         //Assert
-        assertEquals(EXPECTED, result);
+        assertEquals(Double.NaN, result);
     }
 
     @Test
