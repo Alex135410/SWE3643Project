@@ -23,7 +23,7 @@ public class calculator {
     public double divison(double input1, double input2) {
         //preq-ENGINE-7
         if(input2 == 0){
-            return Double.NaN;
+            throw new IllegalArgumentException("Number cannot be 0");
         }
         double sum = input1/input2;
         return sum;
@@ -47,8 +47,11 @@ public class calculator {
 
     public double logarithmOfNumber(double input1, double input2) {
         //preq-ENGINE-10
-        if (input1 <= 0 || input2 == 0) {
-            return Double.NaN;
+        if (input1 <= 0) {
+            throw new IllegalArgumentException("Number must be greater than 0");
+        }
+        if(input2 == 0){
+            throw new IllegalArgumentException("Number cannot be 0");
         }
         double sum =  Math.log(input1) / Math.log(input2);
         return sum;
@@ -56,8 +59,13 @@ public class calculator {
 
     public double rootOfPower(double input1, double input2) {
         //preq-ENGINE-11
-
-        return input1;//just a temp so it returns something
+        if (input1 <= 0) {
+            throw new IllegalArgumentException("Number must be greater than 0");
+        }
+        if (input2 == 0) {
+            throw new IllegalArgumentException("Number cannot be 0");
+        }
+        return Math.pow(input1, 1.0 / input2);
     }
 
     public double factorialOfNumber(double input1) {
@@ -95,7 +103,9 @@ public class calculator {
 
     public double reciprocalOfA(double input1){
         //preq-ENGINE-16
-
-        return input1;//just a temp so it returns something
+        if (input1 == 0) {
+            throw new IllegalArgumentException("Number cannot be 0");
+        }
+        return 1.0 / input1;
     }
 }

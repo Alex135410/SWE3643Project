@@ -15,9 +15,9 @@ class calculatorTest {
         //preq-UNIT-TEST-2
         var cal = new calculator();
         //Arrange
-        final double A = 2.5;
-        final double B = 3.77;
-        final double EXPECTED = 6.27 ;
+        final double A = 5;
+        final double B = 222;
+        final double EXPECTED = 227 ;
 
         //Act
         var result = cal.Add(A,B);
@@ -66,18 +66,33 @@ class calculatorTest {
         //preq-UNIT-TEST-5
         var cal = new calculator();
         //Arrange
-        final double A = 5.0;
-        final double B = 0.0;
+        final double A = 10.0;
+        final double B = 5.0;
+        final double EXPECTED = 2.0;
         //Act
         var result = cal.divison(A,B);
 
         //Assert
-        assertEquals(Double.NaN, result);
+        assertEquals(EXPECTED, result);
     }
 
     @Test
     void divison_twoDoubles_returnsError(){
         //preq-UNIT-TEST-6
+        var cal = new calculator();
+        // Arrange
+        final double A = 3.0;
+        final double B = 0.0;
+
+        // Act
+        try {
+            var result = cal.divison(A, B);
+
+            // Assert
+            fail("Expected an IllegalArgumentException to be thrown");
+        } catch (IllegalArgumentException e) {
+            assertEquals("Number cannot be 0", e.getMessage());
+        }
     }
 
 
@@ -133,30 +148,109 @@ class calculatorTest {
     @Test
     void logarithmOfNumber_twoDouble_returnsError(){
         //preq-UNIT-TEST-10
+        var cal = new calculator();
+        // Arrange
+        final double A = 0;
+        final double B = 2;
+
+        // Act
+        try {
+            var result = cal.logarithmOfNumber(A, B);
+
+            // Assert
+            fail("Expected an IllegalArgumentException to be thrown");
+        } catch (IllegalArgumentException e) {
+            assertEquals("Number must be greater than 0", e.getMessage());
+        }
+
     }
 
     @Test
     void logarithmOfNumber_twoDouble_returnsError2(){
         //preq-UNIT-TEST-11
+        var cal = new calculator();
+        // Arrange
+        final double A = 8;
+        final double B = 0;
+
+        // Act
+        try {
+            var result = cal.logarithmOfNumber(A, B);
+
+            // Assert
+            fail("Expected an IllegalArgumentException to be thrown");
+        } catch (IllegalArgumentException e) {
+            assertEquals("Number cannot be 0", e.getMessage());
+        }
     }
 
     @Test
     void rootOfPower_twoDoubles_returnsRootOfPower() {
         //preq-UNIT-TEST-12
+        var cal = new calculator();
+        // Arrange
+        final double A = 8;
+        final double B = 3;
+        final double EXPECTED = 2;
+
+        // Act
+        var result = cal.rootOfPower(A,B);
+
+        // Assert
+        assertEquals(EXPECTED, result, 0.0001, "The Bth root of A should be equal to the expected result");
     }
 
     @Test
     void rootOfPower_twoDoubles_returnsError(){
         //preq-UNIT-TEST-13
+        var cal = new calculator();
+        // Arrange
+        final double A = 8;
+        final double B = 0;
+
+        // Act
+        try {
+            var result = cal.rootOfPower(A,B);
+
+            // Assert
+            fail("Expected an IllegalArgumentException to be thrown");
+        } catch (IllegalArgumentException e) {
+            assertEquals("Number cannot be 0", e.getMessage());
+        }
+    }
+    @Test
+    void factorialOfNumber_oneDouble_returnsFactorial(){
+        //preq-UNIT-TEST-14
+        var cal = new calculator();
+        //Arrange
+        final double A = 8;
+        final double EXPECTED = 40320;
+
+        //Act
+        var result = cal.factorialOfNumber(A);
+
+        //Assert
+        assertEquals(EXPECTED,result);
     }
 
+
     @Test
-    void factorialOfNumber_oneDouble_returnsFactorial() {
+    void factorialOfNumber_oneDouble_returns1() {
         //preq-UNIT-TEST-15
+        var cal = new calculator();
+        // Arrange
+        final double A = 0;
+        final double EXPECTED = 1;
+
+        // Act
+        var result = cal.factorialOfNumber(A);
+
+        // Assert
+        assertEquals(EXPECTED, result, "The factorial of 0 should be 1");
     }
 
     @Test
-    void sineA() {
+    void sineA_oneDouble_returnsSineOfThatNumber() {
         //preq-UNIT-TEST-16
         var cal = new calculator();
         //Arrange
@@ -171,7 +265,7 @@ class calculatorTest {
     }
 
     @Test
-    void cosineA() {
+    void cosineA_oneDouble_returnsCosineOfThatNumber() {
         //preq-UNIT-TEST-17
         var cal = new calculator();
         //Arrange
@@ -186,7 +280,7 @@ class calculatorTest {
     }
 
     @Test
-    void tangentA() {
+    void tangentA_oneDouble_returnsTangentOfThatNumber() {
         //preq-UNIT-TEST-18
         var cal = new calculator();
         //Arrange
@@ -201,11 +295,37 @@ class calculatorTest {
     }
 
     @Test
-    void reciprocalOfA() {
+    void reciprocalOfA_oneDouble_returnsReciprocal() {
         //preq-UNIT-TEST-19
+        var cal = new calculator();
+        // Arrange
+        final double A = 8;
+        final double EXPECTED = 0.125;
+
+        // Act
+        var result = cal.reciprocalOfA(A);
+
+        // Assert
+        assertEquals(EXPECTED, result, 0.0001, "The reciprocal of A should be equal to the expected result");
     }
 
     @Test
-    void reciprocalOfA_oneDouble_returnsError(){}
-    //preq-UNIT-TEST-19
+    void reciprocalOfA_oneDouble_returnsError(){
+        //preq-UNIT-TEST-19
+        var cal = new calculator();
+        //Arrange
+        final double A = 0;
+
+        // Act
+        try {
+            var result = cal.reciprocalOfA(A);
+
+            // Assert
+            fail("Expected an IllegalArgumentException to be thrown");
+        } catch (IllegalArgumentException e) {
+            assertEquals("Number cannot be 0", e.getMessage());
+        }
+    }
+
+
 }
