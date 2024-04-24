@@ -15,7 +15,8 @@ The repository contains many files and information that show how the “Web-Base
 
 
 # Team Members 
-Alex Castillo
+Alex Castillo 
+
 Joel Roche 
 
 # Architecture
