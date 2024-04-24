@@ -30,7 +30,7 @@ To prepare your environment to execute this application:
   2. [Install the lastest version of IntelliJ IDEA](https://www.jetbrains.com/idea/download/?section=mac)
   3. [Clone repostitory from Github](https://github.com/Alex135410/SWE3643Project)<br/>
   
-Upon installing all these files above you 
+Upon installing all these files above you have sucessfully set up your environment and are ready to run the application on your device. 
 
 # Executing the Web Application
 
