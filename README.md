@@ -17,7 +17,9 @@ Alex Castillo <br/>
 Joel Roche 
 
 # Architecture
-This Architecture of this project is set up,
+This Architecture of this project is set up using a combination of packages and classes. Packages include: Calculator Engine, Calculator Engine Unit Test, Calculator Web Server App, and Calculator End-To-End Test. Classes include: CalculatorEngine, CalculatorTest, CalculatorEndToEndTest, Models, Views, and Controllers. The relationship betweens these are, CalculatorEngineUnitTest interacts with CalculatorEngine for unit testing. Controllers inteact with Models and Views to manage data and user interface elements. Controllers use the CalculatorEngine to preform calculations. Fianlly, CalculatorEndToEndTests interact with Controllers via HTTP calls simulating through a headless browser.
+![SoftwareUML](https://github.com/Alex135410/SWE3643Project/assets/129552122/13a330d6-5edb-44d7-a1f7-52789b3aeded)
+
 
 # Environment
 This is a cross-platform application and should work in Windows 10+ and MacOS.<br/>
