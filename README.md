@@ -22,8 +22,6 @@ This Architecture of this project is set up using a combination of packages and 
 ![UMLSoftware](https://github.com/Alex135410/SWE3643Project/assets/129552122/c70b4156-e62a-4dc8-833f-788720f68bfa)
 
 
-
-
 # Environment
 This is a cross-platform application and should work in Windows 10+ and MacOS.<br/>
 (Note this application has only been tested on MacOS.)<br/>
