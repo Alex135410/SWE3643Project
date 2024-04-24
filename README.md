@@ -34,7 +34,7 @@ To prepare your environment to execute this application:
 
 # Reviewing Unit Test Coverage
 Coverage statistics:
-![Picure of Coverage]()<img width="792" alt="Screenshot 2024-04-24 at 5 39 13 PM" src="https://github.com/Alex135410/SWE3643Project/assets/129552122/6589c362-926e-49e8-87e8-4c9e48dff633">
+![Picure of Coverage]<img width="792" alt="Screenshot 2024-04-24 at 5 39 13 PM" src="https://github.com/Alex135410/SWE3643Project/assets/129552122/6589c362-926e-49e8-87e8-4c9e48dff633">
 
 
 # Excecuting End-To-End Tests
