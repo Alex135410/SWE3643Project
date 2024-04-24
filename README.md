@@ -2,7 +2,7 @@
 The repository contains many files and information that show how the “Web-Based Calculator” was developed. This repository has code for application and unit testing code.
 
 ## Table of Contents
-- [Introduction](#ksu-swe-3643-software-testing-and-quality-assurance-semester-project:-web-based-calculator)
+- [Introduction](#introduction)
 - [Team Members](#team-members )
 - [Architechture](#architecture)
 - [Environment](#environment)
