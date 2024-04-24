@@ -1,8 +1,8 @@
-# KSU SWE 3643 Software Testing and Quality Assurance Semster Project: Web-Based Calculator
+# KSU SWE 3643 Software Testing and Quality Assurance Semester Project: Web-Based Calculator
 The repository contains many files and information that show how the “Web-Based Calculator” was developed. This repository has code for application and unit testing code.
 
 ## Table of Contents
-- [Introduction](#KSU SWE 3643 Software Testing and Quality Assurance Semster Project:-Web-Based-Calculator)
+- [Introduction](#ksu-swe-3643-software-testing-and-quality-assurance-semester-project:-web-based-calculator)
 - [Team Members](#team-members )
 - [Architechture](#architecture)
 - [Environment](#environment)
