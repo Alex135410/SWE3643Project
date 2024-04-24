@@ -2,6 +2,7 @@ package org.example;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class calculatorTest {
@@ -17,13 +18,13 @@ class calculatorTest {
         //Arrange
         final double A = 5;
         final double B = 222;
-        final double EXPECTED = 227 ;
+        final double EXPECTED = 227;
 
         //Act
-        var result = cal.Add(A,B);
+        var result = cal.Add(A, B);
 
         //Assert
-        assertEquals(EXPECTED, result,8);
+        assertEquals(EXPECTED, result, 8);
 
 
     }
@@ -38,10 +39,10 @@ class calculatorTest {
         final double EXPECTED = 23.94;
 
         //Act
-        var result = cal.subtract(A,B);
+        var result = cal.subtract(A, B);
 
         //Assert
-        assertEquals(EXPECTED, result,8);
+        assertEquals(EXPECTED, result, 8);
 
     }
 
@@ -55,7 +56,7 @@ class calculatorTest {
         final double EXPECTED = 35.5;
 
         //Act
-        var result = cal.multiplication(A,B);
+        var result = cal.multiplication(A, B);
 
         //Assert
         assertEquals(EXPECTED, result);
@@ -70,14 +71,14 @@ class calculatorTest {
         final double B = 5.0;
         final double EXPECTED = 2.0;
         //Act
-        var result = cal.divison(A,B);
+        var result = cal.divison(A, B);
 
         //Assert
         assertEquals(EXPECTED, result);
     }
 
     @Test
-    void divison_twoDoubles_returnsError(){
+    void divison_twoDoubles_returnsError() {
         //preq-UNIT-TEST-6
         var cal = new calculator();
         // Arrange
@@ -101,12 +102,12 @@ class calculatorTest {
         //preq-UNIT-TEST-7
         var cal = new calculator();
         //Arrange
-        final double A= 0.33333;
+        final double A = 0.33333;
         final double B = 0.33333;
         final double EXPECTED = 1;
 
         //Act
-        var result = cal.equals(A,B);
+        var result = cal.equals(A, B);
 
         //Assert
         assertEquals(EXPECTED, result);
@@ -122,7 +123,7 @@ class calculatorTest {
         final double EXPECTED = 78125;
 
         //Act
-        var result = cal.raiseToPower(A,B);
+        var result = cal.raiseToPower(A, B);
 
         //Assert
         assertEquals(EXPECTED, result);
@@ -139,14 +140,14 @@ class calculatorTest {
         final double EXPECTED = 1.93578497;
 
         //Act
-        var result = cal.logarithmOfNumber(A,B);
+        var result = cal.logarithmOfNumber(A, B);
 
         //Assert
-        assertEquals(EXPECTED, result,8);
+        assertEquals(EXPECTED, result, 8);
     }
 
     @Test
-    void logarithmOfNumber_twoDouble_returnsError(){
+    void logarithmOfNumber_twoDouble_returnsError() {
         //preq-UNIT-TEST-10
         var cal = new calculator();
         // Arrange
@@ -166,7 +167,7 @@ class calculatorTest {
     }
 
     @Test
-    void logarithmOfNumber_twoDouble_returnsError2(){
+    void logarithmOfNumber_twoDouble_returnsError2() {
         //preq-UNIT-TEST-11
         var cal = new calculator();
         // Arrange
@@ -194,14 +195,14 @@ class calculatorTest {
         final double EXPECTED = 2;
 
         // Act
-        var result = cal.rootOfPower(A,B);
+        var result = cal.rootOfPower(A, B);
 
         // Assert
         assertEquals(EXPECTED, result, 0.0001, "The Bth root of A should be equal to the expected result");
     }
 
     @Test
-    void rootOfPower_twoDoubles_returnsError(){
+    void rootOfPower_twoDoubles_returnsError() {
         //preq-UNIT-TEST-13
         var cal = new calculator();
         // Arrange
@@ -210,7 +211,7 @@ class calculatorTest {
 
         // Act
         try {
-            var result = cal.rootOfPower(A,B);
+            var result = cal.rootOfPower(A, B);
 
             // Assert
             fail("Expected an IllegalArgumentException to be thrown");
@@ -218,8 +219,9 @@ class calculatorTest {
             assertEquals("Number cannot be 0", e.getMessage());
         }
     }
+
     @Test
-    void factorialOfNumber_oneDouble_returnsFactorial(){
+    void factorialOfNumber_oneDouble_returnsFactorial() {
         //preq-UNIT-TEST-14
         var cal = new calculator();
         //Arrange
@@ -230,7 +232,7 @@ class calculatorTest {
         var result = cal.factorialOfNumber(A);
 
         //Assert
-        assertEquals(EXPECTED,result);
+        assertEquals(EXPECTED, result);
     }
 
 
@@ -261,7 +263,7 @@ class calculatorTest {
         var result = cal.sineA(A);
 
         //Assert
-        assertEquals(EXPECTED,result,8);
+        assertEquals(EXPECTED, result, 8);
     }
 
     @Test
@@ -276,7 +278,7 @@ class calculatorTest {
         var result = cal.cosineA(A);
 
         //Assert
-        assertEquals(EXPECTED, result,8);
+        assertEquals(EXPECTED, result, 8);
     }
 
     @Test
@@ -291,7 +293,7 @@ class calculatorTest {
         var result = cal.tangentA(A);
 
         //Assert
-        assertEquals(EXPECTED, result,8);
+        assertEquals(EXPECTED, result, 8);
     }
 
     @Test
@@ -310,7 +312,7 @@ class calculatorTest {
     }
 
     @Test
-    void reciprocalOfA_oneDouble_returnsError(){
+    void reciprocalOfA_oneDouble_returnsError() {
         //preq-UNIT-TEST-19
         var cal = new calculator();
         //Arrange
