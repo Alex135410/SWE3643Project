@@ -22,8 +22,8 @@ Joel Roche
 This Architecture of this project is set up,
 
 # Environment
-This is a cross-platform application and should work in Windows 10+ and MacOS. 
-Note this application has only been tested on MacOS. 
+This is a cross-platform application and should work in Windows 10+ and MacOS.<br/>
+Note this application has only been tested on MacOS.<br/>
 To prepare your environment to execute this application:
   1. [Install the latest version of Java](https://www.oracle.com/java/technologies/downloads/#java22) 
   2. [Install the lastest version of IntelliJ IDEA](https://www.jetbrains.com/idea/download/?section=mac)
