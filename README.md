@@ -5,6 +5,7 @@ The repository contains many files and information that show how the “Web-Base
 ## Table of Contents
 
 - [Team Members](#team-members )
+- [Architechture](#architecture)
 - [Environment](#environment)
 - [Executing the Web Application](#executing-the-web-application )
 - [Executing Unit Tests](#executing-unit-tests )
