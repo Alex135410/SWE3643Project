@@ -28,7 +28,8 @@ This is a cross-platform application and should work in Windows 10+ and MacOS.<b
 To prepare your environment to execute this application:
   1. [Install the latest version of Java](https://www.oracle.com/java/technologies/downloads/#java22) 
   2. [Install the lastest version of IntelliJ IDEA](https://www.jetbrains.com/idea/download/?section=mac)
-  3. [Download files from Github](https://github.com/Alex135410/SWE3643Project)
+  3. [Clone repostitory from Github](https://github.com/Alex135410/SWE3643Project)<br/>
+  
 Upon installing all these files above you 
 
 # Executing the Web Application
