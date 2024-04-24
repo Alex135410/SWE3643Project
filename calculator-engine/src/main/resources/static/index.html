@@ -2,9 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
-<body>
+<body style="background-color: #f2f2f2; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+<div class="container" style="background-color: white; padding: 20px; width: 500px; height: 600px; max-width: 80%;">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Calculator</h2>
+        </div>
+        <div class="col-md-4">
+            <button type="button" class="btn btn-default btn-block" disabled style="background-color: #EBEBEB; margin-top: 18px;">Clear</button>
+        </div>
+    </div>
+    <div class="jumbotron" style="background-color: #FFECD7; padding: 20px; display: flex; text-align: center; align-items: center;">
+        <p style="font-size: 16px; font-weight: bold;">Enter value(s) below and select an operation.</p>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <span style="font-weight: bold; float: left; margin-right: 10px;">Input A</span>
+            <input type="text" class="form-control" placeholder="Enter value">
+        </div>
+        <div class="col-md-6">
+            <span style="font-weight: bold; float: left; margin-right: 10px;">Input B</span>
+            <input type="text" class="form-control" placeholder="Enter value">
+        </div>
+    </div>
+    <div class="row" style="margin-top: 10px;">
+        <div class="col-md-6" style="background-color: #EBEBEB; text-align: center; padding: 5px; font-weight: bold; width: 215px; margin: 0 17px;">A and B</div>
+        <div class="col-md-6" style="background-color: #EBEBEB; text-align: center; padding: 5px; font-weight: bold; width: 215px; margin: 0 11px;">A only</div>
+    </div>
 
-</body>
-</html>
+
+
+
+
+
+
