@@ -6,7 +6,7 @@ The repository contains many files and information that show how the “Web-Base
 - [Architechture](#architecture)
 - [Environment](#environment)
 - [Executing the Web Application](#executing-the-web-application )
-- [Executing Unit Tests](#executing-unit-tests )
+- [Executing Unit Test](#executing-unit-test )
 - [Reviewing Unit Test Coverage](#reviewing-unit-test-coverage )
 - [Executing End-To-End Tests](#executing-end-to-end-tests )
 - [Final Video Presentation ](#final-video-presentation )
