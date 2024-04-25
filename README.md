@@ -35,6 +35,10 @@ Upon installing all these files above you have sucessfully set up your environme
 # Executing the Web Application
 
 # Executing Unit Test
+This below will show you how to run the unit test from the terminal command line <br/>
+  1. Open terminal application
+  2. Change directory to "cd /Users/alexcastillo/IdeaProjects/SWE3643Project/calculator-engine/src/test/java/org/example"
+  3. type in "javac calculatorTest.java"
 
 # Reviewing Unit Test Coverage
 Coverage statistics:
