@@ -33,12 +33,14 @@ To prepare your environment to execute this application:
 Upon installing all these files above you have sucessfully set up your environment and are ready to run the application on your device. 
 
 # Executing the Web Application
+This below will show you how to run the web application from the terminal command line <br/>
 
 # Executing Unit Test
 This below will show you how to run the unit test from the terminal command line <br/>
   1. Open terminal application
   2. Change directory to "cd /Users/alexcastillo/IdeaProjects/SWE3643Project/calculator-engine/src/test/java/org/example"
-  3. Type in "javac calculatorTest.java"
+  3. Type in "javac calculatorTest.java" to compile the test
+  4. Type in "java calculatorTest" to run the test
 
 # Reviewing Unit Test Coverage
 Coverage statistics:
@@ -48,6 +50,11 @@ Coverage statistics:
 
 
 # Excecuting End-To-End Tests
+This below will show you how to run the end-to-end test from the terminal command line <br/>
+  1. Open terminal application
+  2. Change directory to "cd /Users/alexcastillo/IdeaProjects/SWE3643Project/calculator-engine/src/test/java/org/example/calculatorengine/CalculatorEngineApplicationTests.java"
+  3. Type in "javac CalculatorEngineApplication.java" to compile the test
+  4. Type in "java CalculatorEngineApplication" to run the test
 
 # Final Video Presentation
 
