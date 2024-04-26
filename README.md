@@ -42,6 +42,8 @@ This below will show you how to run the unit test from the terminal command line
   3. Type in "javac calculatorTest.java" to compile the test
   4. Type in "java calculatorTest" to run the test
 
+Doing all these step will insure you can run the web application via command line. This is incase the user does not have an IDE to run the program.
+
 # Reviewing Unit Test Coverage
 Coverage statistics:
 
@@ -55,6 +57,8 @@ This below will show you how to run the end-to-end test from the terminal comman
   2. Change directory to "cd /Users/alexcastillo/IdeaProjects/SWE3643Project/calculator-engine/src/test/java/org/example/calculatorengine/CalculatorEngineApplicationTests.java"
   3. Type in "javac CalculatorEngineApplication.java" to compile the test
   4. Type in "java CalculatorEngineApplication" to run the test
+
+Doing all these steps will insure you can run the end-to-end test via command line. This is incase the user does not have an IDE to run the program.
 
 # Final Video Presentation
 
